@@ -688,9 +688,26 @@ header {
   background: var(--DAIRY, #fcfcfc);
 }
 
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #e7e9fc;
+  cursor: pointer;
+}
+
+.close-icon {
+  fill: var(--NAVY-BLUE);
+}
+
 .modal-text {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
+  border-radius: 50%;
   /* Body Medium */
   font-family: Roboto;
   font-size: 16px;
