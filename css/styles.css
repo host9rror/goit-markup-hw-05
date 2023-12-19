@@ -681,6 +681,7 @@ header {
 }
 
 .modal-window {
+  position: absolute;
   width: 408px;
   height: 584px;
   flex-shrink: 0;
@@ -715,4 +716,5 @@ header {
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+  padding-top: 72px;
 }
