@@ -520,7 +520,7 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="modal">
+    <div class="modal is-open">
       <div class="modal-window">
         <button type="button" class="modal-close-btn">
           <svg width="8" height="8" class="close-icon">
@@ -528,6 +528,45 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form action="" class="modal-form">
+          <label class="modal-name-text" for="">Name</label>
+          <div class="modal-form-input-wrapper">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="username"
+              required
+            />
+            <svg width="18" height="18" class="form-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="modal-name-text" for="">Phone</label>
+          <div class="modal-form-input-wrapper">
+            <input class="modal-form-input" type="number" name="username" />
+            <svg width="18" height="18" class="form-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="modal-name-text" for="">Email</label>
+          <div class="modal-form-input-wrapper">
+            <input class="modal-form-input" type="email" name="username" />
+            <svg width="18" height="18" class="form-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="modal-name-text" for="">Comment</label>
+          <div class="modal-form-input-wrapper">
+            <textarea
+              name="feedback"
+              id="5"
+              cols=""
+              rows=""
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
