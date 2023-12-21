@@ -787,6 +787,10 @@ header {
   gap: 8px;
 }
 
+.modal-form-label {
+  margin-bottom: 8px;
+}
+
 .modal-form-input-wrapper {
   position: relative;
 }
