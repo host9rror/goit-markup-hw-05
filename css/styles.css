@@ -582,6 +582,10 @@ header {
   color: #ffffff;
 }
 
+.mailing-form {
+  display: flex;
+}
+
 .footer-social-link {
   display: flex;
   justify-content: center;
@@ -618,10 +622,6 @@ header {
 .footer-social-item:hover,
 .footer-social-item:focus {
   background-color: #31d0aa;
-}
-
-.label-footer {
-  display: flex;
 }
 
 .label-email-footer input[type="email"] {
