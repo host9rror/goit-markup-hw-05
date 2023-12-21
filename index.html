@@ -520,9 +520,13 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="modal is-open">
-      <div class="modal-window">
-        <button type="button" class="modal-close-btn">
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button
+          type="button"
+          class="modal-close-btn"
+          aria-label="Modal Close Button"
+        >
           <svg width="8" height="8" class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -544,7 +548,7 @@
           <label class="modal-name-text" for="">Phone</label>
           <div class="modal-form-input-wrapper">
             <input class="modal-form-input" type="number" name="username" />
-            <svg width="18" height="18" class="form-icon">
+            <svg width="18" height="24" class="form-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
@@ -567,7 +571,7 @@
             ></textarea>
           </div>
           <div class="input-chekbox">
-            <label for="" class="modal-name-text">
+            <label for="accept" class="modal-name-text">
               <input
                 type="checkbox"
                 name="terms and conditions"

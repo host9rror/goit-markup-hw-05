@@ -668,7 +668,7 @@ header {
   margin-left: 24px;
 }
 
-.modal {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -678,12 +678,23 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 300ms ease-in, visibility 300ms ease-in;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.modal-window {
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.modal {
   position: absolute;
-  width: 408px;
-  height: 584px;
+  min-width: 408px;
+  min-height: 584px;
   flex-shrink: 0;
   border-radius: 4px;
   background: var(--DAIRY, #fcfcfc);
@@ -763,9 +774,13 @@ header {
   position: absolute;
   top: 50%;
   left: 16px;
+  fill: var(--navyblue);
   transform: translateY(-50%);
-  stroke: #2e2f42;
-  transition: stroke 300ms;
+  transition: fill 300ms ease-in;
+}
+
+.modal-form-input:focus + .form-icon {
+  fill: #4d5ae5;
 }
 
 .modal-textarea {
@@ -811,4 +826,5 @@ header {
 }
 
 .input-chekbox {
+  margin-bottom: 24px;
 }
