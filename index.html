@@ -558,6 +558,7 @@
           <label class="modal-name-text" for="">Comment</label>
           <div class="modal-form-input-wrapper">
             <textarea
+              class="modal-textarea"
               name="feedback"
               id="5"
               cols=""
@@ -565,7 +566,19 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div class="input-chekbox">
+            <label for="" class="modal-name-text">
+              <input
+                type="checkbox"
+                name="terms and conditions"
+                value="accept"
+                id="accept"
+              />
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
     </div>
