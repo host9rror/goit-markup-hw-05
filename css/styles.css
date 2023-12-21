@@ -729,7 +729,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
-  border: 1px solid #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -768,15 +768,16 @@ header {
 }
 
 .modal-name-text {
+  display: block;
   color: var(--LIGHT-SLATE, #8e8f99);
-
-  /* Small Text */
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px; /* 116.667% */
+  line-height: 14px;
   letter-spacing: 0.48px;
+  line-height: 1.17;
+  margin-bottom: 4px;
 }
 
 .modal-form {
@@ -803,6 +804,9 @@ header {
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   transition: border-color 300ms ease-in;
   outline: none;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -816,7 +820,7 @@ header {
   left: 16px;
   fill: var(--navyblue);
   transform: translateY(-50%);
-  transition: fill 300ms ease-in;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus + .form-icon {
