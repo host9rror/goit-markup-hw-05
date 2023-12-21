@@ -405,6 +405,7 @@ header {
 
 .team-social-icon {
   fill: #f4f4fd;
+  margin-left: 16px;
 }
 
 /* Our Portfolio (Section 4) */
@@ -582,8 +583,12 @@ header {
   color: #ffffff;
 }
 
+.mailing {
+}
+
 .mailing-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-social-link {
@@ -625,10 +630,14 @@ header {
 }
 
 .label-email-footer input[type="email"] {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
   color: #fff;
-  background: var(--NAVY-BLUE, #2e2f42);
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -647,6 +656,8 @@ header {
 }
 
 .footer-btn {
+  font-family: "Roboto", sans-serif;
+  min-width: 165px;
   color: var(--WHITE, #fff);
   text-align: center;
   /* Button Text */
@@ -660,12 +671,10 @@ header {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
-  margin-left: 24px;
 }
 
 .backdrop {
