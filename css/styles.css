@@ -750,7 +750,6 @@ header {
 .modal-close-btn:hover .close-icon,
 .modal-close-btn:focus .close-icon {
   fill: #ffffff;
-  /* Добавлено изменение цвета иконки при наведении */
 }
 
 .modal-text {
@@ -869,10 +868,10 @@ header {
   overflow: hidden;
 }
 
-.modal-form-input:checked + .modal-name-text > .user-privacy-span {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
+.input-chekbox input:checked + .modal-name-text .user-privacy-span {
+  background-color: var(--BACKGROUND-COLOR-checked);
+  border: var(--BORDER-NONE-checked);
+  fill: var(--FILL-COLOR-checked);
 }
 
 .privacy-policy-link {
