@@ -791,6 +791,10 @@ header {
   margin-bottom: 8px;
 }
 
+.modal-form-label-comment {
+  margin-bottom: 16px;
+}
+
 .modal-form-input-wrapper {
   position: relative;
   margin-bottom: 16px;
@@ -869,9 +873,9 @@ header {
 }
 
 .input-chekbox input:checked + .modal-name-text .user-privacy-span {
-  background-color: var(--BACKGROUND-COLOR-checked);
-  border: var(--BORDER-NONE-checked);
-  fill: var(--FILL-COLOR-checked);
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .privacy-policy-link {
