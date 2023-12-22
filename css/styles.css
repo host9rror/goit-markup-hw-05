@@ -837,7 +837,7 @@ header {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   width: 360px;
   height: 120px;
@@ -854,22 +854,35 @@ header {
 }
 
 .modal-chekbox {
-  visibility: hidden;
 }
 
-.modal-chekbox:checked + .user-privacy-span{
-  color: #404bbf;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form-input:checked + .modal-name-text > .user-privacy-span {
+  background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.privacy-policy-link{
+.privacy-policy-link {
   color: #4d5ae5;
 }
 
 .user-privacy-span {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   fill: transparent;
   width: 16px;
   height: 16px;
