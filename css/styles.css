@@ -792,6 +792,7 @@ header {
 }
 
 .modal-form-label {
+  margin-bottom: 8px;
 }
 
 .modal-form-label-comment {
