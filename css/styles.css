@@ -675,7 +675,7 @@ header {
   background: var(--IRIS, #4d5ae5);
 }
 
-.footer-btn-icon {
+.footer-button-icon {
   fill: #f4f4fd;
   margin-left: 16px;
 }
