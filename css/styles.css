@@ -405,7 +405,6 @@ header {
 
 .team-social-icon {
   fill: #f4f4fd;
-  margin-left: 16px;
 }
 
 /* Our Portfolio (Section 4) */
@@ -541,7 +540,7 @@ header {
 }
 
 .social-media {
-  margin-right: 120px;
+  margin-right: 80px;
 }
 
 .logo-footer {
@@ -788,7 +787,6 @@ header {
 }
 
 .modal-form-label {
-  margin-bottom: 8px;
 }
 
 .modal-form-label-comment {
@@ -797,7 +795,6 @@ header {
 
 .modal-form-input-wrapper {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .modal-form-input {
