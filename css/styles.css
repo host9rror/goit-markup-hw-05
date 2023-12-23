@@ -675,6 +675,11 @@ header {
   background: var(--IRIS, #4d5ae5);
 }
 
+.footer-btn-icon {
+  fill: #f4f4fd;
+  margin-left: 16px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
